@@ -11,3 +11,12 @@
  *= require_self
  *= require_tree .
  */
+
+
+
+  .navbar-inner {
+  text-align:left;
+  background: #110031 !important;
+  height: 100px;
+  float: none;
+}

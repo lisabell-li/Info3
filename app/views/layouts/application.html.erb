@@ -5,9 +5,18 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+ <link rel="stylesheet" href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css"/>
+  <%= favicon_link_tag '/public/favicon.ico' %>
+  <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap.js"></script>
+  
 </head>
-<body>
 
+</head>
+<body >
+
+   
+    <div class="navbar-inner">
+  
 <%= yield %>
 
 </body>

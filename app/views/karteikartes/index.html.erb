@@ -1,0 +1,31 @@
+<h1>Listing karteikartes</h1>
+
+<table>
+  <tr>
+    <th>Vorname</th>
+    <th>Nachname</th>
+    <th>Current fach</th>
+    <th>Prev fach</th>
+    <th>Erraten</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @karteikartes.each do |karteikarte| %>
+  <tr>
+    <td><%= karteikarte.vorname %></td>
+    <td><%= karteikarte.nachname %></td>
+    <td><%= karteikarte.current_fach %></td>
+    <td><%= karteikarte.prev_fach %></td>
+    <td><%= karteikarte.erraten %></td>
+    <td><%= link_to 'Show', karteikarte %></td>
+    <td><%= link_to 'Edit', edit_karteikarte_path(karteikarte) %></td>
+    <td><%= link_to 'Destroy', karteikarte, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Karteikarte', new_karteikarte_path %>

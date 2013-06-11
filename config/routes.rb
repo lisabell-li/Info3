@@ -1,4 +1,7 @@
 Lsn::Application.routes.draw do
+  resources :karteikartes
+
+
   root :to => redirect("/students")
   resources :students
 

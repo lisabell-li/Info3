@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Vorname:</b>
+  <%= @karteikarte.vorname %>
+</p>
+
+<p>
+  <b>Nachname:</b>
+  <%= @karteikarte.nachname %>
+</p>
+
+<p>
+  <b>Current fach:</b>
+  <%= @karteikarte.current_fach %>
+</p>
+
+<p>
+  <b>Prev fach:</b>
+  <%= @karteikarte.prev_fach %>
+</p>
+
+<p>
+  <b>Erraten:</b>
+  <%= @karteikarte.erraten %>
+</p>
+
+
+<%= link_to 'Edit', edit_karteikarte_path(@karteikarte) %> |
+<%= link_to 'Back', karteikartes_path %>

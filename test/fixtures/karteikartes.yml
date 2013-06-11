@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  vorname: MyString
+  nachname: MyString
+  current_fach: 
+  prev_fach: 
+  erraten: false
+
+two:
+  vorname: MyString
+  nachname: MyString
+  current_fach: 
+  prev_fach: 
+  erraten: false

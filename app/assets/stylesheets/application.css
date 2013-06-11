@@ -13,10 +13,35 @@
  */
 
 
+  .navbar-top {
+  background: #110031 !important;
+  height: 10px;
+
+}
 
   .navbar-inner {
-  text-align:left;
+  padding-top:-5px;
+  text-align:center;
   background: #110031 !important;
-  height: 100px;
-  float: none;
+  height: 30px;
 }
+
+h3{
+  text-align:center; 
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+
+}
+
+.link{
+   text-align:center; 
+   font-size: 20px;
+   font-weight: 200;	
+   color: white;
+  }
+
+ .class1 A:link {text-decoration: none; color: white;}
+.class1 A:visited {text-decoration: none; color: white;}
+.class1 A:active {text-decoration: none; color: white;}
+.class1 A:hover {text-decoration: none;color: white;}

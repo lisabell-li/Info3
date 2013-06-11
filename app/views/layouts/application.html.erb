@@ -12,12 +12,19 @@
 </head>
 
 </head>
-<body >
+<body>  
+	<div>
+    <ul class="navbar-inner" >
+            <%= link_to 'Game', games_path,class: "link" %> 
+            <%= link_to 'Studenten', students_path, class: "link" %> 
+            <%= link_to 'Kurse', courses_path,  class: "link" %>
+            <%= link_to 'Professor', professors_path, class: "link" %> 
+            <%= link_to 'Score', scores_path, class: "link" %>
+            <%= link_to 'Deck', decks_path, class: "link" %> 
+    
+    </ul>
+</div>
 
-   
-    <div class="navbar-inner">
-  
 <%= yield %>
-
 </body>
 </html>

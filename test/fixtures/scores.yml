@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  gameMode: MyString
+  courseName: MyString
+  score: 1
+
+two:
+  gameMode: MyString
+  courseName: MyString
+  score: 1

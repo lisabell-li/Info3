@@ -1,4 +1,19 @@
 Lsn::Application.routes.draw do
+  resources :games
+
+
+  resources :scores
+
+
+  resources :professors
+
+
+  resources :decks
+
+
+  resources :courses
+
+
   resources :karteikartes
 
 

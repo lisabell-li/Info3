@@ -3,8 +3,8 @@ class CreateKarteikartes < ActiveRecord::Migration
     create_table :karteikartes do |t|
       t.string :vorname
       t.string :nachname
-      t.number :current_fach
-      t.number :prev_fach
+      t.integer :current_fach
+      t.integer :prev_fach
       t.boolean :erraten
 
       t.timestamps

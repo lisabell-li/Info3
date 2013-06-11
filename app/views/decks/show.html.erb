@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cycletime:</b>
+  <%= @deck.cycleTime %>
+</p>
+
+<p>
+  <b>Decknumber:</b>
+  <%= @deck.decknumber %>
+</p>
+
+
+<%= link_to 'Edit', edit_deck_path(@deck) %> |
+<%= link_to 'Back', decks_path %>

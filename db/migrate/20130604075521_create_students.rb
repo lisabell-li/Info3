@@ -4,7 +4,6 @@ class CreateStudents < ActiveRecord::Migration
       t.string :vorname
       t.string :nachname
       t.string :foto
-
       t.timestamps
     end
   end

@@ -5,4 +5,8 @@ class Student < ActiveRecord::Base
   validates :nachname, :presence => true
   validates :foto, :presence => true
 
+ def name
+    "#{vorname} #{nachname}"
+  end
+
 end

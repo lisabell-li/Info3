@@ -35,7 +35,7 @@ describe "Student" do
     S = Student.new
     S.vorname= "Lisa"
 	S.nachname= "Bell"
-    S.should have_name("Lisa Bell")
+    S.name.should equal("Lisa Bell")
   end
 end
 

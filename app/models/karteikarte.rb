@@ -4,4 +4,11 @@ class Karteikarte < ActiveRecord::Base
   validates :nachname, :presence => true
   validates :foto, :presence => true
   
+
+  def in_deck?(deck_id)
+    true
+  end
+
+  def assign_deck(deck_id)
+  end
 end

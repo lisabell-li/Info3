@@ -10,14 +10,14 @@ end
   describe "Scores" do
   it "Schould have Button to show score" do
     visit scores_path
-    page.should have_content("Show Scores")
+    page.should have_content("New Score")
   end
 end
 
 describe "Professor" do
   it "Schould have name" do
     visit professors_path
-    page.should have_content("Edit")
+    page.should have_content("Emailaddress")
   end
 end
 

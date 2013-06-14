@@ -8,8 +8,25 @@ describe "Homepage" do
 end
 
   describe "Scores" do
-  it "Schould have title" do
+  it "Schould have Button to show score" do
     visit scores_path
-    page.should have_content("Score")
+    page.should have_content("Show Scores")
   end
 end
+
+describe "Professor" do
+  it "Schould have name" do
+    visit professors_path
+    page.should have_content("Edit")
+  end
+end
+
+
+describe "Karteikarte" do
+  it "should be in deck, assigned to it" do
+    Karteikarte = Karteikarte.new
+    Karteikarte.assign_deck("1")
+    Karteikarte.should be_in_deck("1")
+  end
+end
+

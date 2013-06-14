@@ -69,6 +69,13 @@ class KarteikartesController < ApplicationController
     end
   end
 
+def in_deck?(deck_id)
+    true
+  end
+
+def assign_deck(deck_id)
+  end
+
   # DELETE /karteikartes/1
   # DELETE /karteikartes/1.json
   def destroy

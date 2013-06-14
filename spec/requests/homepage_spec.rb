@@ -6,3 +6,10 @@ describe "Homepage" do
     page.should have_content("Info3 Studenten")
   end
 end
+
+  describe "Scores" do
+  it "Schould have title" do
+    visit scores_path
+    page.should have_content("Score")
+  end
+end

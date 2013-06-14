@@ -41,7 +41,70 @@ h3{
    color: white;
   }
 
- .class1 A:link {text-decoration: none; color: white;}
-.class1 A:visited {text-decoration: none; color: white;}
-.class1 A:active {text-decoration: none; color: white;}
-.class1 A:hover {text-decoration: none;color: white;}
+a{
+  color: green;
+}
+
+#top-menu{
+  width: 1250px;
+  position: absolute;
+  left: 50%;
+  margin-left: -600px;
+}
+
+.brand{
+  background: url(logo4.png) no-repeat;
+  background-size: 100%;
+  width: 90px;
+  height: 115px;
+  margin-top: 10px;
+}
+ .navbar {
+  width: 100%;
+}
+.navbar .brand {
+  margin-left: 100px;
+}
+
+.nav-top > li > a {
+  text-align:center;
+  background: #110031 !important;
+  height: 30px;
+  color:#110031;
+  text-shadow:none;
+  font-size: 18px;
+}
+
+.navbar .nav.pull-right > li > a {
+  float:left;
+  display:inline; 
+  vertical-align: top;
+  margin-left: 3px;
+  margin-top: -1px;
+  font-size:14px;
+  font-weight:bold;
+  background-color:#77b900;
+  color: #fff;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;    
+  font-weight: 100;
+                               /* nav right */
+} 
+.navbar .nav.pull-right > li > a:hover{
+  color: #000;
+}
+.navbar .nav {
+  margin-left: 70px;
+}
+
+.navbar .nav > li > a {
+  color:#fff;
+  text-shadow:none;
+  z-index: 1;
+  margin-top: 30px;
+}
+
+.navbar .nav > li > a:hover {
+  color:#77b900;
+}

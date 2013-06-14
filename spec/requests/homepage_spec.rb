@@ -35,7 +35,7 @@ describe "Student" do
     S = Student.new
     S.vorname= "Lisa"
 	S.nachname= "Bell"
-    S.name.should equal("Lisa Bell")
+    expect(S.name).to eq("Lisa Bell")
   end
 end
 

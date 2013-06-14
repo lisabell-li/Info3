@@ -1,3 +1,7 @@
+**Travis CI**  
+[![Build Status](https://travis-ci.org/lisabell-li/Info3.png?branch=master)](https://travis-ci.org/lisabell-li/Info3)
+
+
 Was bisher geschah:
 
 Rails App initialisiert

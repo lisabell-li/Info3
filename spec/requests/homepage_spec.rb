@@ -7,7 +7,7 @@ describe "Homepage" do
   end
 end
 
-  describe "Scores" do
+describe "Scores" do
   it "Schould have Button to show score" do
     visit scores_path
     page.should have_content("New Score")
@@ -34,7 +34,7 @@ describe "Student" do
   it "should have full name out of vorname und nachname" do
     S = Student.new
     S.vorname= "Lisa"
-	S.nachname= "Bell"
+	  S.nachname= "Bell"
     expect(S.name).to eq("Lisa Bell")
   end
 end

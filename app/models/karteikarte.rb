@@ -4,6 +4,8 @@ class Karteikarte < ActiveRecord::Base
   validates :nachname, :presence => true
   validates :foto, :presence => true
   
+  belongs_to :deck
+  belongs_to :student
 
   def in_deck?(decknumber)
     true
@@ -12,8 +14,7 @@ class Karteikarte < ActiveRecord::Base
   def assign_deck(decknumber)
   end
 
-belongs_to :deck
-belongs_to :student
+
 
 
 end

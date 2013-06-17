@@ -11,7 +11,6 @@ describe Karteikarte do
   context 'validation' do
      it { should validate_presence_of(:vorname) }
      it { should validate_presence_of(:nachname) }
-     it { should validate_presence_of(:foto) }
    end
 end
 

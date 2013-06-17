@@ -5,6 +5,8 @@ class Student < ActiveRecord::Base
   validates :nachname, :presence => true
   validates :foto, :presence => true
 
+  has_one :karteikarte
+
  def name
     "#{vorname} #{nachname}"
   end

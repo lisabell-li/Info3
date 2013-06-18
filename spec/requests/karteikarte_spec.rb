@@ -14,8 +14,7 @@ describe Karteikarte do
 
   context "Deck_id" do
    it "should be in deck, assigned to it" do  
-      @karti.assign_deck(2)
-      @karti.should be_in_deck(2)
+      @karti.should be_in_deck(1)
     end
  end
 

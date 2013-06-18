@@ -5,10 +5,10 @@ require 'spec_helper'
 describe Karteikarte do
   setup do
       @karti = Karteikarte.new
-      @karti.student_id => 1,
-      @karti.deck_id =>  1,
-      @karti.vorname => 'Lisa',
-      @karti.nachname => 'nachname'}
+      @karti.student_id = 1
+      @karti.deck_id =  1
+      @karti.vorname = "Lisa"
+      @karti.nachname = "Bell"}
     end
    end
 

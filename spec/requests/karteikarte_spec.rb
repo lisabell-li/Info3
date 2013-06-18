@@ -5,14 +5,14 @@ require 'Karteikarte'
 
 describe Karteikarte do
   setup do
-    @kärtchen = Karteikarte.new
+    @karti = Karteikarte.new
    end
 
   context "Deck_id" do
    it "should be in deck, assigned to it" do
-      @kärtchen.attributes = valid_karteikarte_attributes
-      @kärtchen.assign_deck(2)
-      @kärtchen.should be_in_deck(2)
+      @karti.attributes = valid_karteikarte_attributes
+      @karti.assign_deck(2)
+      @karti.should be_in_deck(2)
     end
  end
 

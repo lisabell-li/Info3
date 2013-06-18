@@ -4,18 +4,16 @@ require 'spec_helper'
 
 describe Karteikarte do
   setup do
-    @karti = Karteikarte.new
-     def valid_karteikarte_attributes
-    { :student_id => 1,
-      :deck_id =>  1,
-      :vorname => 'Lisa',
-      :nachname => 'nachname'}
+      @karti = Karteikarte.new
+      @karti.student_id => 1,
+      @karti.deck_id =>  1,
+      @karti.vorname => 'Lisa',
+      @karti.nachname => 'nachname'}
     end
    end
 
   context "Deck_id" do
-   it "should be in deck, assigned to it" do
-      @karti.attributes = valid_karteikarte_attributes
+   it "should be in deck, assigned to it" do  
       @karti.assign_deck(2)
       @karti.should be_in_deck(2)
     end

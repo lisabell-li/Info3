@@ -14,7 +14,7 @@ describe Karteikarte do
 
   context "Deck_id" do
    it "should be in deck, assigned to it" do  
-      @karti.should be_in_deck(1)
+      expect(karti.deck_id).to eq(1);
     end
  end
 

@@ -8,7 +8,7 @@ describe Karteikarte do
       @karti.student_id = 1
       @karti.deck_id =  1
       @karti.vorname = "Lisa"
-      @karti.nachname = "Bell"}
+      @karti.nachname = "Bell"
     end
    end
 

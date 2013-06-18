@@ -5,6 +5,12 @@ require 'spec_helper'
 describe Karteikarte do
   setup do
     @karti = Karteikarte.new
+     def valid_karteikarte_attributes
+    { :student_id => 1,
+      :deck_id =>  1,
+      :vorname => 'Lisa',
+      :nachname => 'nachname'}
+    end
    end
 
   context "Deck_id" do

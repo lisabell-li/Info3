@@ -10,7 +10,7 @@ describe Karteikarte do
       @karti.vorname = "Lisa"
       @karti.nachname = "Bell"
     end
-   end
+  
 
   context "Deck_id" do
    it "should be in deck, assigned to it" do  

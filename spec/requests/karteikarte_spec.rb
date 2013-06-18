@@ -1,17 +1,17 @@
 require 'spec_helper'
 
 describe Karteikarte do
-  setup do
-      @karti = Karteikarte.new
-      @karti.student_id = 1
-      @karti.deck_id =  1
-      @karti.vorname = "Lisa"
-      @karti.nachname = "Bell"
-    end
+  
+
   
   context "Deck_id" do
    it "should be in deck, assigned to it" do  
-      expect(@karti.deck_id).to eq(1);
+   	  karti = Karteikarte.new
+      karti.student_id = 1
+      karti.deck_id =  1
+      karti.vorname = "Lisa"
+      karti.nachname = "Bell"
+      expect(karti.deck_id).to eq(1);
     end
  end
 

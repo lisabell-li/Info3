@@ -9,12 +9,12 @@ class Karteikarte < ActiveRecord::Base
   belongs_to :deck
   belongs_to :student
 
-  def in_deck?(deck_nr)
+  def in_deck?(:deck_id)
     true
   end
 
-  def assign_deck(deck_nr)
-    @Karteikarte.deck_id = deck_nr
+  def assign_deck(:deck_id)
+    @Karteikarte.deck_id = deck_id
   end
 
 

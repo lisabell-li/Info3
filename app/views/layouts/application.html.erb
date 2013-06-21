@@ -22,7 +22,9 @@
             <%= link_to 'Kurse', courses_path,  class: "link" %>
             <%= link_to 'Professor', professors_path, class: "link" %> 
             <%= link_to 'Score', scores_path, class: "link" %>
-            <%= link_to 'Deck', decks_path, class: "link" %> 
+            <%= link_to 'Deck', decks_path, class: "link" %>  
+            <%= link_to_unless_current "English", locale: "en" %>
+            <%= link_to_unless_current "Deutsch", locale: "de" %>
     
     </ul>
 </div>

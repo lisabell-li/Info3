@@ -4,5 +4,5 @@
 en:
   hello: "Hello world"
   students:
-   index:
-   title: "Info3 students"
+    index:
+    title: "Info3 students"

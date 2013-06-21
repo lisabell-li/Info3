@@ -17,12 +17,12 @@
 <div class="nav-collapse collapse">
 
     <ul class="nav nav-top ">
-            <%= link_to 'Start Game', games_path,class: "link" %> 
-            <%= link_to 'Studenten', students_path, class: "link" %> 
-            <%= link_to 'Kurse', courses_path,  class: "link" %>
-            <%= link_to 'Professor', professors_path, class: "link" %> 
-            <%= link_to 'Score', scores_path, class: "link" %>
-            <%= link_to 'Deck', decks_path, class: "link" %>  
+            <%= link_to t("header.start"), games_path,class: "link" %> 
+            <%= link_to t("header.student"), students_path, class: "link" %> 
+            <%= link_to t("header.course"), courses_path,  class: "link" %>
+            <%= link_to t("header.professor"), professors_path, class: "link" %> 
+            <%= link_to t("header.score"), scores_path, class: "link" %>
+            <%= link_to t("header.deck"), decks_path, class: "link" %>  
             <%= link_to_unless_current "English", locale: "en" %>
             <%= link_to_unless_current "Deutsch", locale: "de" %>
     

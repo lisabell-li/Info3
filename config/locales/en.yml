@@ -2,7 +2,17 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  header:
+   start: "Game"
+   student: "Students"
+   course: "Courses"
+   professor: "Professor"
+   score: "Score"
+   deck: "Deck"
   students:
     index:
     title: "Info3 students"
+    lastname: "Firstname"
+    firstname: "Lastname"
+    foto: "Picture"
+    createNew: "Create new student"

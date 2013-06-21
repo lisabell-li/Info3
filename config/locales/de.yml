@@ -2,7 +2,18 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 de:
-  hello: "Hallo"
+  header: 
+   start: "Spiel"
+   student: "Studenten"
+   course: "Kurse"
+   professor: "Professor"
+   score: "Punktestand"
+   deck: "Deck"
   students:
     index:
     title: "Info3 Studenten"
+    lastname: "Nachname"
+    firstname: "Vorname"
+    foto: "Foto"
+    createNew: "Neuen Studenten anlegen"
+

@@ -5,7 +5,7 @@
   <tr>
     <th><%= t "students.lastname" %></th>
     <th><%= t "students.firstname" %></th>
-    <th>Foto</th>
+    <th><%= t "students.foto" %></th>
     <th></th>
     <th></th>
     <th></th>
@@ -25,4 +25,4 @@
 
 <br />
 
-<%= link_to 'Neuen Studenten anlegen', new_student_path %>
+<%= link_to t("students.createNew"), new_student_path %>

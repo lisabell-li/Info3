@@ -1,4 +1,7 @@
 Lsn::Application.routes.draw do
+
+scope "/:locale", locale: /#{I18n.available_locales.join("|")}/ do
+
   resources :games
 
 
@@ -17,9 +20,20 @@ Lsn::Application.routes.draw do
   resources :karteikartes
 
 
-  root :to => redirect("/students")
   resources :students
+  
+  root to: 'students#index'
+  
 
+  match '*path', to: redirect("/#{I18n.locale}/no_path")
+
+  end
+  match '*path', to: redirect { |params, request| "/#{I18n.default_locale}#{request.fullpath}" }
+  match '', to: redirect("/#{I18n.default_locale}/") , constraints: lambda { |req| !req.path.starts_with? "/#{I18n.default_locale}/" }
+
+  
+  match 'de', to: redirect("/de/students")
+  match 'en', to: redirect("/en/students")
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

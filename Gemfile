@@ -18,7 +18,7 @@ end
 gem 'carrierwave'
 
 group :development, :test do
-  gem 'rspec-rails',      ">= 2.0.0.beta"
+  gem 'rspec-rails', '~> 2.13.0'
 end
 
 group :test do

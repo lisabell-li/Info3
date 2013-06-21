@@ -1,9 +1,7 @@
 require 'spec_helper'
 
 describe Karteikarte do
-  
-
-  
+ 
   context "Deck_id" do
    it "should be in deck, assigned to it" do  
    	  karti = Karteikarte.new

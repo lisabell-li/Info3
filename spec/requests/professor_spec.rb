@@ -1,9 +1,9 @@
 require 'spec_helper'
 
 describe "Professor" do
-  it "Schould have name" do
-    visit professors_path
-    page.should have_content("Emailaddress")
+  it "Schould have emailAdress" do
+    visit professors_path(locale)
+    page.should have_content("Professor")
   end
 end
 

@@ -2,8 +2,17 @@ require 'spec_helper'
 
 describe "Homepage" do
   it "Info3 Studenten" do
-    visit root_path
-    page.should have_content("Info3 Studenten")
+    visit root_path(locale)
+    page.should have_content("Studenten")
+  end
+end
+
+ describe "GET 'index'" do
+  before do
+    get 'index'
+  end
+  it "should be successful" do
+    response.should be_redirect
   end
 end
 

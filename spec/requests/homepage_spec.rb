@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "Homepage" do
   it "Info3 Studenten" do
-    visit root_path(locale)
+    visit root_path("de")
     page.should have_content("Studenten")
   end
 end

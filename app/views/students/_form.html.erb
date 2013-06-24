@@ -21,8 +21,14 @@
   </div>
   <div class="field">
     <%= f.label :foto %><br />
-   <%= f.file_field :foto %>
+    <%= f.file_field :foto %>
   </div>
+  
+  <div class="field">
+    <%= f.label "verfügbare Kurse" %> <br />
+    <%= f.collection_select(:course_id, @all_courses, :id, :coursename,{:prompt => false}) %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

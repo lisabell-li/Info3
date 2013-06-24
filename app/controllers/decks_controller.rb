@@ -3,7 +3,7 @@ class DecksController < ApplicationController
   # GET /decks.json
   def index
     @decks = Deck.all
-
+    #@course = Course.find(@deck.course_id)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @decks }
@@ -14,11 +14,13 @@ class DecksController < ApplicationController
   # GET /decks/1.json
   def show
     @deck = Deck.find(params[:id])
-
+    @course = Course.find(@deck.course_id)
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @deck }
     end
+
+    
   end
 
   # GET /decks/new

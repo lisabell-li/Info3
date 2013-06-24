@@ -44,6 +44,11 @@ class CoursesController < ApplicationController
 
     respond_to do |format|
       if @course.save
+        6.times do |i|
+          time = i * 20
+          @course.decks << Deck.new({:cycleTime => time, :decknumber=> i})
+        end
+
         format.html { redirect_to @course, notice: 'Course was successfully created.' }
         format.json { render json: @course, status: :created, location: @course }
       else

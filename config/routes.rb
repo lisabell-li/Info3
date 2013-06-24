@@ -20,6 +20,7 @@ scope "/:locale", locale: /#{I18n.available_locales.join("|")}/ do
   resources :karteikartes
 
 
+  match "/students/admin", :to => "Students#admin"
   resources :students
   
   root to: 'students#index'

@@ -1,6 +1,11 @@
 class StudentsController < ApplicationController
   # GET /students
   # GET /students.json
+  def admin 
+
+  end
+
+
   def index
     @students = Student.all
 
@@ -25,7 +30,7 @@ class StudentsController < ApplicationController
   # GET /students/new.json
   def new
     @student = Student.new
-
+    @all_courses = Course.all
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @student }
@@ -35,6 +40,7 @@ class StudentsController < ApplicationController
   # GET /students/1/edit
   def edit
     @student = Student.find(params[:id])
+    @all_courses = Course.all
   end
 
   # POST /students

@@ -14,7 +14,10 @@
   <b>Foto:</b>
   <%= image_tag(@student.foto_url, :width => 600) if @student.foto.present? %>
 </p>
-
+<p>
+  <b>Kurs:</b>
+  <%= @student.course.coursename %>
+</p>
 
 <%= link_to 'Editieren', edit_student_path(@student) %> |
 <%= link_to 'Zurück zur Übersicht', students_path %>

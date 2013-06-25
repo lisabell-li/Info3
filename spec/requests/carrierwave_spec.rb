@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'factory_girl'
 
-
+#to be tested locally only because of pictures needed
+=begin
 describe "Carrierwave Test" do
 it "should show that C. loads a picture properly" do
 visit new_attachment_path("de")
@@ -36,7 +36,8 @@ it "should show that C. loads only whitelisted pics" do
 visit new_attachment_path("de")
 fill_in "AttDescription", :with => "Nice Door"
 fill_in "Name", :with => "bla"
-attach_file("Attachments", "#{Rails.root}/spec/requests/door2.png")
+attach_file("Attachments", "http://www.avbrand.com/images/door.png")
 click_button "Create Attachment"
 end
 end
+=end

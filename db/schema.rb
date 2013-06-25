@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130624122946) do
+ActiveRecord::Schema.define(:version => 20130625191542) do
+
+  create_table "attachments", :force => true do |t|
+    t.string   "description"
+    t.string   "file"
+    t.string   "name"
+    t.string   "attachment"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "courses", :force => true do |t|
     t.string   "coursename"
@@ -71,6 +80,7 @@ ActiveRecord::Schema.define(:version => 20130624122946) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "course_id"
+    t.string   "attachment"
   end
 
 end

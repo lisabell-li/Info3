@@ -7,7 +7,7 @@ gem 'rails', '3.2.13'
 
 gem "rspec"
 gem "capybara"
-
+gem 'aws'
 
 group :development do
   gem 'sqlite3'

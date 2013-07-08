@@ -6,7 +6,6 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem "rspec"
-gem "capybara"
 gem 'aws'
 
 group :development do
@@ -19,6 +18,7 @@ gem 'carrierwave'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.13.0'
+  gem 'capybara', '~> 2.1.0'
 end
 
 group :test do
